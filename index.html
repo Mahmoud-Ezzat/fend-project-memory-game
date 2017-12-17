@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Matching Game</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <div class="container first-game">
+        <header>
+            <h1>Matching Game</h1>
+        </header>
+        <section class="score-panel">
+            <a class="restart">
+                <i class="fa fa-repeat"></i>
+            </a>
+            <ul class="stars">
+                <li><i class="fa fa-star one-star"></i></li>
+                <li><i class="fa fa-star two-star"></i></li>
+                <li><i class="fa fa-star three-star"></i></li>
+            </ul>
+            <span class="moves">0</span> Moves
+            <p id="timer"></p>
+        </section>
+        <ul class="deck"></ul>
+    </div>
+    <div class="modal fade" id="new-game-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h1 class="modal-title">Congratulations! You Won! <i class="fa fa-check" aria-hidden="true"></i></h1>
+                </div>
+                <div class="modal-body new-game">
+                    You Won The game with <b><span class="moves">0</span> Moves  and you got  <span class="stars-number">3</span><i class="fa fa-star one-star"  aria-hidden="true"></i></b>                    in <b><span class="time-finish"> </span> Seconds</b>
+                    <div class="replay">
+                        <button type="button" class="btn btn-large btn-block btn-success play-again">Play Again </button>
+                    </div>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    </div>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script src="js/app.js"></script>
+</body>
+
+</html>
+</div>
